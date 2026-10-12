@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>de.diegurus</groupId>
+    <artifactId>MustangProjectSchematronTest</artifactId>
+    <version>0.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>com.helger.maven</groupId>
+            <artifactId>ph-schematron-maven-plugin</artifactId>
+            <version>10.2.0</version>
+        </dependency>
+    </dependencies>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.release>17</maven.compiler.release>
+        <exec.mainClass>de.diegurus.mustangproject.schematrontest.MustangProjectSchematronTest</exec.mainClass>
+    </properties>    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.helger.maven</groupId>
+                <artifactId>ph-schematron-maven-plugin</artifactId>
+                <version>10.2.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>validate</goal>
+                        </goals>
+                        <configuration>
+                            <schematronFile>Schematron/EN16931-CII/EN16931-CII-validation-preprocessed.sch</schematronFile> 
+                            <xmlDirectory>Testdata</xmlDirectory>
+                            <schematronProcessingEngine>schematron</schematronProcessingEngine>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
