@@ -29,8 +29,11 @@
                             <goal>validate</goal>
                         </goals>
                         <configuration>
-                            <schematronFile>Schematron/EN16931-CII/EN16931-CII-validation-preprocessed.sch</schematronFile> 
                             <xmlDirectory>Testdata</xmlDirectory>
+                            <!--
+                            <schematronFile>Schematron/EN16931-CII/EN16931-CII-validation-preprocessed.sch</schematronFile> 
+                            -->
+                            <schematronFile>Schematron/Factur-X_1.09.2_EXTENDED/FACTUR-X_EXTENDED.sch</schematronFile>
                             <schematronProcessingEngine>schematron</schematronProcessingEngine>
                         </configuration>
                     </execution>
