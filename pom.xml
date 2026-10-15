@@ -32,8 +32,10 @@
                             <xmlDirectory>Testdata</xmlDirectory>
                             <!--
                             <schematronFile>Schematron/EN16931-CII/EN16931-CII-validation-preprocessed.sch</schematronFile> 
-                            -->
                             <schematronFile>Schematron/Factur-X_1.09.2_EXTENDED/FACTUR-X_EXTENDED.sch</schematronFile>
+                            <schematronFile>Schematron/Peppol_BIS_V3/PEPPOL-EN16931-UBL.sch</schematronFile>
+                            -->
+                            <schematronFile>Schematron/Peppol_BIS_V3/CEN-EN16931-UBL.sch</schematronFile>
                             <schematronProcessingEngine>schematron</schematronProcessingEngine>
                         </configuration>
                     </execution>
